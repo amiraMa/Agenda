@@ -1,36 +1,62 @@
 <!doctype html>
-<head>
   <meta charset="utf-8">
   <title>My Application</title>
+  <link href="../Css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
 </head>
 <body>
-  <img src="../images/Logo.png" width="90" height="90"></img><br><br><!--logo-->
-  <button><a href="Connexion.html">Connexion</a></button><br><br><!--Bouton "Connexion"-->
-  <button><a href="home.html">Home</a></button><br><!--Bouton "Home"-->
-  <h1>Inscription :</h1><!--Formulaire "Inscription"-->
+<div class="home">
+  <div class="Bar">
+<div class="logo">To do list</div>
+<div class="Liens">
+  <button class="boutonConnexion"><a href="Connexion.html">Connexion</a></button><!--Bouton "Connexion"-->
+  <button class="boutonConnexion boutonHome"><a href="home.html">Home</a></button><!--Bouton "Home"-->
+</div>
+</div>
+
+<div class="Box2">
+  <h1>Inscription </h1><!--Formulaire "Inscription"-->
   <form method="" action="">
     <h3>Nom :</h3>
-    <input type="text" value="" placeholder="....."></input>
+    <div class="textBox2">
+    <input type="text" value="" placeholder="Entrez votre nom" required></input>
+  </div>
     <h3>Prenom :</h3>
-    <input type="text" value="" placeholder="....."></input>
-    <h3>Date de naissance</h3>
-    <input type="text" value="" placeholder="....."></input>
+    <div class="textBox2">
+    <input type="text" value="" placeholder="Entrez votre prénom" required></input>
+    </div>
+    <h3>Date de naissance :</h3>
+    <div class="textBox2">
+    <input type="text" value="" placeholder="Entrez votre date de naissance" required></input>
+   </div>
     <h3>Genre</h3>
-    <input type="radio"  name="Genre" value="">Homme</input>
-    <input type="radio"  name="Genre" value="">Femme</input>
+    <input type="radio"  name="Genre" value="">&nbsp;&nbsp;Homme</input><br><br>
+    <input type="radio"  name="Genre" value="">&nbsp;&nbsp;Femme</input>
+
     <h3>Email :</h3>
-    <input type="email" value="" placeholder="....."></input>
+    <div class="textBox2">
+    <input type="email" value="" placeholder="Entrez votre email" required></input>
+    </div>
     <h3>Telephone :</h3>
-    <input type="email" value="" placeholder="....."></input>
+    <div class="textBox2">
+    <input type="text" value="" placeholder="Entrez votre numéro de téléphone" required ></input>
+  </div>
     <h3>Mot de passe :</h3>
-    <input type="password" value="" placeholder="....."></input>
+    <div class="textBox2">
+    <input type="password" name="password"placeholder="Entrez votre mot de passe" required></input>
+  </div>
     <h3>Repeter votre mot de passe :</h3>
-    <input type="password" value="" placeholder="....."></input><br><br>
-    <input type ="submit" value="S'inscrire"></input>
-    <input type="reset" value="Effacer"></input>
+    <div class="textBox2">
+    <input type="password" name="password2"  placeholder="Repetez votre mot de passe" required></input>
+  </div>
+    <button type ="submit"class="boutonInscri">S'inscrire</button>
+    <button type="reset"class="boutonInscri" >Effacer</button>
   </form>
-
-
+</div>
+</div>
 </body>
 </html>

@@ -2,20 +2,25 @@
 <head>
   <meta charset="utf-8">
   <title>My Application</title>
+  <link href="../Css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
 </head>
 <body>
-    <img src="../images/Logo.png" alt="My logo" width="90" height="90"></img><br><br><!--Logo-->
-    <button><a href="home.html">Deconnexion</a></button><br><br><!--bouton "Deconnexion"-->
-    <button><a href="Profil.html">Profil</a></button><br><br><!--bouton "Profil"-->
-    <button><a href="TodoList.html">To Do List</a></button><br><br><!--bouton "TodoList"-->
-
-    <p>Vous pouvez ajouter des listes des taches qui permettent d'organiser et gérer les vos projets .</p>
-    <form method="" action=""><!--bouton Ajouter todo-->
-
-      <input type="submit" value="Ajouter"></input>
-
-    </form>
-    </center>
+<div class="Profil">
+<div class="menu">
+<div class="logo">To do list</div>
+<div class="icons">
+<a href="TodoList.html"><i class="fas fa-calendar icon"></i></a>
+<a href="Profil.html"><i class="fas fa-user-alt icon"></i></a>
+<a href="home.html"><i class="fas fa-home icon" ></i></a>
+</div>
+</div>
+<input type="text" value="" required>
+<button type="submit" class="Todo">Ajouter</button>
+</div>
 </body>
 </html>

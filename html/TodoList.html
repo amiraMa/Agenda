@@ -1,88 +1,112 @@
 <!doctype html>
-<head>
   <meta charset="utf-8">
   <title>My Application</title>
+  <link href="../Css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
 <body>
-  <img src="../images/Logo.png" alt="My logo" width="90" height="90"></img><br><br><!--logo-->
-  <button><a href="home.html">Deconnexion</a></button><br><br><!--Bouton "deconnexion"-->
-  <button><a href="Profil.html">Profil</a></button><br><br><!--Bouton "Profil"-->
-  <button><a href="ajoutTodo.html">Ajout un To do</a></button><br><br><!--Bouton "Ajout todo"-->
-  <h1>To Do :</h1><!--Tableau de TO do LIST-->
-  <table border=3 width=50%>
-    <tr>
-    <th>Done</td>
-    <th>Date d'ajout</td>
-    <th>Action</td>
-    </tr>
-    <tr>
-    <td></td>
-    <td></td>
-    <td>
-      <center>
-      <form method="" action="">
-        <input type="submit" value="Done"></input>
-        <input type="submit" value="Modifier"></input>
-        <input type="submit" value="Supprimer"></input>
+<div class="container">
+<div class="menu">
+<div class="logo">To do list</div>
+<div class="icons">
+<a href="Profil.html"><i class="fas fa-users icon"></i></a>
+<a href="home.html"><i class="fas fa-home icon" ></i></a>
+</div>
 
-      </form>
-      </center>
-     </td>
-     </tr>
-     <tr>
-     <td>
-     </td>
-     <td>
-     </td>
-     <td>
-      <center>
-      <form method="" action="">
-        <input type="submit" value="Done"></input>
-        <input type="submit" value="Modifier"></input>
-        <input type="submit" value="Supprimer"></input>
+</div>
+<div class="Barre">
 
-      </form>
-      </center>
-     </td>
-     </tr>
-  </table> <br>
-  <hr></hr>
-  <h1>Done :</h1>
-  <table border=3 width=50%>
-    <tr>
-    <th>Done</td>
-    <th>Date d'ajout
-    </td>
-    <th>Action
-    </td>
-    </tr>
-    <tr>
-    <td> </td>
-    <td> </td>
-    <td>
-      <center>
-      <form method="" action="">
+<span class="boutonAjout"><a href="ajoutTodo.html">Ajouter </a></span>
+</div>
+</div>
+<!--tableaux!-->
+<div class="res-tab">
+  <h1 class="titre">Todo </h1>
+  <table>
 
-        <input type="submit" value="Supprimer"></input>
+<tr>
+<th>Done</th>
 
-      </form>
-      </center>
-    </td>
-    </tr>
-    <tr>
-    <td>  </td>
-    <td> </td>
-    <td>
-      <center>
-      <form method="" action="">
+<th>Date d'ajout</th>
+<th>Action</th>
+</tr>
+<tr>
+<td></td>
 
-        <input type="submit" value="Supprimer"></input>
+<td></td>
+<td>
+<center>
+<form method="" action="">
+<button type="submit" value="Done" class="btnTodo">Done<button>
+<button type="submit" value="Modifier" class="btnTodo">Modifier</button>
+<button type="submit" value="Supprimer" class="btnTodo">Supprimer</button>
+</form>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+<center>
+<form method="" action="">
+<button type="submit" value="Done" class="btnTodo">Done<button>
+<button type="submit" value="Modifier" class="btnTodo">Modifier</button>
+<button type="submit" value="Supprimer" class="btnTodo">Supprimer</button>
 
-      </form>
-      </center>
-    </td>
-    </tr>
- </table>
+</form>
+</center>
+</td>
+</tr>
+</table>
+</table>
+</div>
+<div class="Contour">
+</div>
+<div class="res-tab">
+<h1 class="titre">Done </h1>
+<table>
+<tr>
+<th>Done</th>
+<th>Date d'ajout</th>
+<th>Action</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<center>
+<form method="" action="">
+<button type="submit" value="Done" class="btnTodo">Done<button>
+<button type="submit" value="Modifier" class="btnTodo">Modifier</button>
+<button type="submit" value="Supprimer" class="btnTodo">Supprimer</button>
+
+</form>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+<center>
+<form method="" action="">
+><button type="submit" value="Done" class="btnTodo">Done</button>
+><button type="submit" value="Modifier" class="btnTodo">Modifier</button>
+><button type="submit" value="Supprimer" class="btnTodo">Supprimer</button>
+</form>
+</center>
+</td>
+</tr>
+</table>
+</table>
+</div>
 </body>
 </html>
